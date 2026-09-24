@@ -334,6 +334,26 @@
             .nav-inner {
                 flex-direction: column;
                 padding: 15px 0;
+                gap: 12px;
+            }
+
+            .nav-links {
+                width: 100%;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                gap: 16px;
+                overflow-x: auto;
+                white-space: nowrap;
+                scrollbar-width: none;
+            }
+
+            .nav-links::-webkit-scrollbar {
+                display: none;
+            }
+
+            .nav-links a {
+                font-size: 0.85rem;
+                white-space: nowrap;
             }
 
             .features {
@@ -356,6 +376,10 @@
             .hero-branding img {
                 width: 92vw;
                 max-height: none;
+            }
+
+            .developer-info .buttons {
+                justify-content: center !important;
             }
         }
     </style>
