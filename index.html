@@ -102,7 +102,21 @@
         .hero-content {
             width: min(850px, 100%);
             margin: auto;
-            padding: 90px 0;
+            padding: 55px 0 90px;
+        }
+
+        .hero-branding {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 38px;
+        }
+
+        .hero-branding img {
+            display: block;
+            width: min(560px, 92vw);
+            height: auto;
+            max-height: 360px;
+            object-fit: contain;
         }
 
         .badge {
@@ -356,6 +370,13 @@
 
 <section class="hero" id="home">
     <div class="container hero-content">
+
+        <div class="hero-branding">
+            <img
+                src="elara-fractal-bloom.png"
+                alt="Elara AI & OS — More than intelligence. A new orbit."
+            >
+        </div>
 
         <div class="badge">AI • Vision • Voice • Automation</div>
 
