@@ -66,14 +66,24 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 9px;
             font-size: 1.3rem;
             font-weight: 800;
+        }
+
+        .logo img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            mix-blend-mode: screen;
         }
 
         .logo span {
             color: #62d9ff;
         }
-
+        
         .nav-links {
             display: flex;
             gap: 22px;
@@ -102,19 +112,21 @@
         .hero-content {
             width: min(850px, 100%);
             margin: auto;
-            padding: 15px 0 70px;
+            padding: 0 0 70px;
         }
 
         .hero-branding {
             display: flex;
             justify-content: center;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            transform: translateY(-120px);
         }
+
         .hero-branding img {
             display: block;
-            width: min(720px, 90vw);
+            width: min(900px, 96vw);
             height: auto;
-            max-height: 400px;
+            max-height: 500px;
             object-fit: contain;
             mix-blend-mode: screen;
         }
@@ -354,7 +366,10 @@
 
 <nav>
     <div class="container nav-inner">
-        <a href="#home" class="logo">ELARA <span>AI & OS</span></a>
+        <a href="#home" class="logo">
+            <img src="elara-icon.png" alt="" aria-hidden="true">
+            <span style="color:#f5f7ff;">ELARA</span> <span>AI & OS</span>
+       </a>
 
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
